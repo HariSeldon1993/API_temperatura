@@ -12,7 +12,7 @@ var temp_min = document.getElementById('temp_min').value;
 // }
 
 
-//fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cidade}&limit=1&appid=2de0dd57f1caaf4c1f947baf8166c6fb`)
+//fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cidade}&limit=1&appid=2de0dd57f1caaf4c1f947baf8166c6fb`)
 //const cep = document.querySelector("#cep")
 
 // const showData = (result) => {
@@ -23,7 +23,7 @@ var temp_min = document.getElementById('temp_min').value;
 // }
 
 cidade.addEventListener("blur",(e)=>{
-    //fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cidade}&limit=1&appid=2de0dd57f1caaf4c1f947baf8166c6fb`)
+    //fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cidade}&limit=1&appid=2de0dd57f1caaf4c1f947baf8166c6fb`)
     
     let search = cidade.value //replace("-","")
     const options = {
@@ -32,7 +32,7 @@ cidade.addEventListener("blur",(e)=>{
         cache: 'default'
     }
 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=1&appid=2de0dd57f1caaf4c1f947baf8166c6fb`, options)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=1&appid=2de0dd57f1caaf4c1f947baf8166c6fb`, options)
      //.then(response => console.log(response.json()))
     
     .then(response=>{response.json()
